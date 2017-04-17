@@ -1,4 +1,4 @@
-<div class="apidocDiv">
+<html><head></head><body><div class="apidocDiv">
 <style>
 /*csslint
 */
@@ -47,17 +47,10 @@
 }
 </style>
 <h1>api documentation for
-    <a
-
-        href="https://github.com/dciccale/grunt-processhtml"
-
-    >grunt-processhtml (v0.4.1)</a>
+    <a href="https://github.com/dciccale/grunt-processhtml">grunt-processhtml (v0.4.1)</a>
 </h1>
 <h4>Process html files at build time to modify them depending on the release environment</h4>
-<div class="apidocSectionDiv"><a
-    href="#apidoc.tableOfContents"
-    id="apidoc.tableOfContents"
-><h1>table of contents</h1></a><ol>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.grunt-processhtml">module grunt-processhtml</a><ol>
 
@@ -132,32 +125,32 @@
     <li>description and source-code<pre class="apidocCodePre">grunt-processhtml = function (grunt) {
   grunt.initConfig({
     jshint: {
-      all: [&#x27;tasks<span class="apidocCodeCommentSpan">/**/*.js&#x27;, &#x27;&#x3c;%= nodeunit.tests %&#x3e;&#x27;],
+      all: ['tasks<span class="apidocCodeCommentSpan">/**/*.js', '&lt;%= nodeunit.tests %&gt;'],
       options: {
-        jshintrc: &#x27;.jshintrc&#x27;
+        jshintrc: '.jshintrc'
       }
     },
     processhtml: {
       dev: {
         options: {
           data: {
-            message: &#x27;This is dev target&#x27;
+            message: 'This is dev target'
           }
         },
         files: {
-          &#x27;test/fixtures/dev/index.processed.html&#x27;: [&#x27;test/fixtures/index.html&#x27;]
+          'test/fixtures/dev/index.processed.html': ['test/fixtures/index.html']
         }
       },
       dist: {
         options: {
           process: true,
           data: {
-            title: &#x27;My app&#x27;,
-            message: &#x27;This is dist target&#x27;
+            title: 'My app',
+            message: 'This is dist target'
           }
         },
         files: {
-          &#x27;test/fixtures/dist/index.processed.html&#x27;: [&#x27;test/fixtures/index.html&#x27;]
+          'test/fixtures/dist/index.processed.html': ['test/fixtures/index.html']
         }
       },
       custom: {
@@ -166,22 +159,22 @@
             interpolate: /{{([\s\S]+?)}}/g
           },
           data: {
-            message: &#x27;This has custom delimiters for the template&#x27;
+            message: 'This has custom delimiters for the template'
           }
         },
         files: {
-          &#x27;test/fixtures/custom/custom.processed.html&#x27;: [&#x27;test/fixtures/custom.html&#x27;]
+          'test/fixtures/custom/custom.processed.html': ['test/fixtures/custom.html']
         }
       },
       marker: {
         options: {
-          commentMarker: &#x27;process&#x27;,
+          commentMarker: 'process',
           data: {
-            message: &#x27;This uses a custom comment marker&#x27;
+            message: 'This uses a custom comment marker'
           }
         },
         files: {
-          &#x27;test/fixtures/commentMarker/commentMarker.processed.html&#x27;: [&#x27;test/fixtures/commentMarker.html&#x27;]
+          'test/fixtures/commentMarker/commentMarker.processed.html': ['test/fixtures/commentMarker.html']
         }
       },
       strip: {
@@ -189,7 +182,7 @@
           strip: true
         },
         files: {
-          &#x27;test/fixtures/strip/strip.processed.html&#x27;: [&#x27;test/fixtures/strip.html&#x27;]
+          'test/fixtures/strip/strip.processed.html': ['test/fixtures/strip.html']
         }
       },
       inline: {
@@ -197,7 +190,7 @@
           environment: null
         },
         files: {
-          &#x27;test/fixtures/inline/inline.processed.html&#x27;: [&#x27;test/fixtures/inline.html&#x27;]
+          'test/fixtures/inline/inline.processed.html': ['test/fixtures/inline.html']
         }
       },
 
@@ -206,27 +199,27 @@
        */
 </span>      mult_one: {
         files: {
-          &#x27;test/fixtures/multiple/mult_one.processed.html&#x27;: [&#x27;test/fixtures/multiple.html&#x27;]
+          'test/fixtures/multiple/mult_one.processed.html': ['test/fixtures/multiple.html']
         }
       },
       mult_two: {
         files: {
-          &#x27;test/fixtures/multiple/mult_two.processed.html&#x27;: [&#x27;test/fixtures/multiple.html&#x27;]
+          'test/fixtures/multiple/mult_two.processed.html': ['test/fixtures/multiple.html']
         }
       },
       mult_three: {
         files: {
-          &#x27;test/fixtures/multiple/mult_three.processed.html&#x27;: [&#x27;test/fixtures/multiple.html&#x27;]
+          'test/fixtures/multiple/mult_three.processed.html': ['test/fixtures/multiple.html']
         }
       },
       include_js: {
         files: {
-          &#x27;test/fixtures/include/include.processed.html&#x27;: [&#x27;test/fixtures/include.html&#x27;]
+          'test/fixtures/include/include.processed.html': ['test/fixtures/include.html']
         }
       },
       conditional_ie: {
         files: {
-          &#x27;test/fixtures/conditional_ie/conditional_ie.processed.html&#x27;: [&#x27;test/fixtures/conditional_ie.html&#x27;]
+          'test/fixtures/conditional_ie/conditional_ie.processed.html': ['test/fixtures/conditional_ie.html']
         }
       },
       recursive: {
@@ -234,39 +227,39 @@
           recursive: true
         },
         files: {
-          &#x27;test/fixtures/recursive/recursive.processed.html&#x27;: [&#x27;test/fixtures/recursive.html&#x27;]
+          'test/fixtures/recursive/recursive.processed.html': ['test/fixtures/recursive.html']
         }
       },
       custom_blocktype: {
         options: {
-          customBlockTypes: [&#x27;test/fixtures/custom_blocktype.js&#x27;]
+          customBlockTypes: ['test/fixtures/custom_blocktype.js']
         },
         files: {
-          &#x27;test/fixtures/custom_blocktype/custom_blocktype.processed.html&#x27;: [&#x27;test/fixtures/custom_blocktype.html&#x27;]
+          'test/fixtures/custom_blocktype/custom_blocktype.processed.html': ['test/fixtures/custom_blocktype.html']
         }
       },
       template: {
         options: {
           data: {
-            msg: &#x27;hey&#x27;,
-            test: &#x27;text_$&#x26;_text&#x27;
+            msg: 'hey',
+            test: 'text_$&amp;_text'
           }
         },
         files: {
-          &#x27;test/fixtures/template/template.processed.html&#x27;: [&#x27;test/fixtures/template.html&#x27;]
+          'test/fixtures/template/template.processed.html': ['test/fixtures/template.html']
         }
       }
     },
     nodeunit: {
-      tests: [&#x27;test/*_test.js&#x27;]
+      tests: ['test/*_test.js']
     }
   });
-  grunt.loadTasks(&#x27;tasks&#x27;);
-  grunt.loadNpmTasks(&#x27;grunt-contrib-jshint&#x27;);
-  grunt.loadNpmTasks(&#x27;grunt-contrib-nodeunit&#x27;);
-  grunt.loadNpmTasks(&#x27;grunt-release&#x27;);
-  grunt.registerTask(&#x27;test&#x27;, [&#x27;processhtml&#x27;, &#x27;nodeunit&#x27;]);
-  grunt.registerTask(&#x27;default&#x27;, [&#x27;jshint&#x27;, &#x27;test&#x27;]);
+  grunt.loadTasks('tasks');
+  grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-contrib-nodeunit');
+  grunt.loadNpmTasks('grunt-release');
+  grunt.registerTask('test', ['processhtml', 'nodeunit']);
+  grunt.registerTask('default', ['jshint', 'test']);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -282,14 +275,14 @@
     <ul>
     <li>description and source-code<pre class="apidocCodePre">processhtml = function (grunt) {
 
-  grunt.registerMultiTask(&#x27;processhtml&#x27;, &#x27;Process html files at build time to modify them depending on the release environment&#x27;,
+  grunt.registerMultiTask('processhtml', 'Process html files at build time to modify them depending on the release environment',
 function () {
     var options = this.options({
       process: false,
       data: {},
       templateSettings: null,
       includeBase: null,
-      commentMarker: &#x27;build&#x27;,
+      commentMarker: 'build',
       strip: false,
       recursive: false,
       customBlockTypes: [],
@@ -305,7 +298,7 @@ function () {
       var srcFiles = f.src.filter(function (filepath) {
         // Warn on and remove invalid source files (if nonull was set).
         if (!grunt.file.exists(filepath)) {
-          grunt.log.warn(&#x27;Source file &#x22;&#x27; + filepath + &#x27;&#x22; not found.&#x27;);
+          grunt.log.warn('Source file "' + filepath + '" not found.');
           return false;
         }
         return true;
@@ -330,7 +323,7 @@ function () {
 
       }, function () {
         grunt.file.write(destFile, result.join(grunt.util.normalizelf(grunt.util.linefeed)));
-        grunt.verbose.writeln(&#x27;File &#x27; + destFile.cyan + &#x27; created.&#x27;);
+        grunt.verbose.writeln('File ' + destFile.cyan + ' created.');
         n();
       });
     }, done);
@@ -370,14 +363,14 @@ function () {
     <ul>
     <li>description and source-code<pre class="apidocCodePre">processhtml = function (grunt) {
 
-  grunt.registerMultiTask(&#x27;processhtml&#x27;, &#x27;Process html files at build time to modify them depending on the release environment&#x27;,
+  grunt.registerMultiTask('processhtml', 'Process html files at build time to modify them depending on the release environment',
 function () {
     var options = this.options({
       process: false,
       data: {},
       templateSettings: null,
       includeBase: null,
-      commentMarker: &#x27;build&#x27;,
+      commentMarker: 'build',
       strip: false,
       recursive: false,
       customBlockTypes: [],
@@ -393,7 +386,7 @@ function () {
       var srcFiles = f.src.filter(function (filepath) {
         // Warn on and remove invalid source files (if nonull was set).
         if (!grunt.file.exists(filepath)) {
-          grunt.log.warn(&#x27;Source file &#x22;&#x27; + filepath + &#x27;&#x22; not found.&#x27;);
+          grunt.log.warn('Source file "' + filepath + '" not found.');
           return false;
         }
         return true;
@@ -418,7 +411,7 @@ function () {
 
       }, function () {
         grunt.file.write(destFile, result.join(grunt.util.normalizelf(grunt.util.linefeed)));
-        grunt.verbose.writeln(&#x27;File &#x27; + destFile.cyan + &#x27; created.&#x27;);
+        grunt.verbose.writeln('File ' + destFile.cyan + ' created.');
         n();
       });
     }, done);
@@ -454,3 +447,4 @@ function () {
     ]
 </div>
 </div>
+</body></html>
