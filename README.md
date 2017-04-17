@@ -1,9 +1,11 @@
 # api documentation for  [grunt-processhtml (v0.4.1)](https://github.com/dciccale/grunt-processhtml)  [![npm package](https://img.shields.io/npm/v/npmdoc-grunt-processhtml.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-grunt-processhtml) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-grunt-processhtml.svg)](https://travis-ci.org/npmdoc/node-npmdoc-grunt-processhtml)
 #### Process html files at build time to modify them depending on the release environment
 
-[![NPM](https://nodei.co/npm/grunt-processhtml.png?downloads=true)](https://www.npmjs.com/package/grunt-processhtml)
+[![NPM](https://nodei.co/npm/grunt-processhtml.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/grunt-processhtml)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-grunt-processhtml/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-grunt-processhtml_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-grunt-processhtml/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-grunt-processhtml/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-grunt-processhtml/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-grunt-processhtml/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-grunt-processhtml/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-grunt-processhtml/build/screenCapture.npmPackageListing.svg)
 
@@ -18,7 +20,6 @@
 {
     "author": {
         "name": "Denis Ciccale",
-        "email": "dciccale@gmail.com",
         "url": "http://twitter.com/tdecs"
     },
     "bugs": {
@@ -66,13 +67,11 @@
     "main": "Gruntfile.js",
     "maintainers": [
         {
-            "name": "denis",
-            "email": "dciccale@gmail.com"
+            "name": "denis"
         }
     ],
     "name": "grunt-processhtml",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git://github.com/dciccale/grunt-processhtml.git"
@@ -83,16 +82,6 @@
     "version": "0.4.1"
 }
 ```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module grunt-processhtml](#apidoc.module.grunt-processhtml)
-
-
-
-# <a name="apidoc.module.grunt-processhtml"></a>[module grunt-processhtml](#apidoc.module.grunt-processhtml)
 
 
 
