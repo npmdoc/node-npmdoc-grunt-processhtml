@@ -1,4 +1,7 @@
-# api documentation for  [grunt-processhtml (v0.4.1)](https://github.com/dciccale/grunt-processhtml)  [![npm package](https://img.shields.io/npm/v/npmdoc-grunt-processhtml.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-grunt-processhtml) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-grunt-processhtml.svg)](https://travis-ci.org/npmdoc/node-npmdoc-grunt-processhtml)
+# npmdoc-grunt-processhtml
+
+#### api documentation for  [grunt-processhtml (v0.4.1)](https://github.com/dciccale/grunt-processhtml)  [![npm package](https://img.shields.io/npm/v/npmdoc-grunt-processhtml.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-grunt-processhtml) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-grunt-processhtml.svg)](https://travis-ci.org/npmdoc/node-npmdoc-grunt-processhtml)
+
 #### Process html files at build time to modify them depending on the release environment
 
 [![NPM](https://nodei.co/npm/grunt-processhtml.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/grunt-processhtml)
@@ -79,7 +82,8 @@
     "scripts": {
         "test": "grunt --verbose"
     },
-    "version": "0.4.1"
+    "version": "0.4.1",
+    "bin": {}
 }
 ```
 
